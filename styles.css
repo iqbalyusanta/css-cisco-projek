@@ -1,0 +1,28 @@
+h2{
+    color:blue;
+}
+header{
+    color: red;
+}
+header{
+    background-color: red;
+    background-image:url(https://edube.org/uploads/media/default/0001/04/portfolio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+main{
+    background:linear-gradient(to bottom, lightblue, white)
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 1,6;
+    pad: 10px;
+}
+a:link{
+    color: darkblue;}
+a:visited{
+    color: purple;
+}
+a:hover{
+    color: red;
+}
