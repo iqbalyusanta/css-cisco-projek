@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyek Dasar Sass</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #222;
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      line-height: 1.6;
+    }
+
+    .header {
+      background-color: #3399ff;
+      padding: 25px;
+      text-align: center;
+      color: white;
+    }
+
+    .header h1 {
+      font-size: 2em;
+      margin: 0;
+    }
+
+    .about {
+      padding: 40px 20px;
+      background-color: #ffffff;
+    }
+
+    .about h2 {
+      font-size: 1.5em;
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    .about p {
+      font-size: 16px;
+      color: #333;
+      max-width: 800px;
+    }
+
+    .features {
+      padding: 40px 20px;
+    }
+
+    .features h2 {
+      font-size: 1.5em;
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+
+    .features .feature-list {
+      list-style-type: disc;
+      padding-left: 25px;
+    }
+
+    .features .feature-list li {
+      border-radius: 6px;
+      padding: 10px 12px;
+      margin-bottom: 10px;
+      background-color: #66b2ff;
+      color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.2s, transform 0.2s;
+    }
+
+    .features .feature-list li:hover {
+      background-color: #006fe6;
+      transform: translateY(-2px);
+    }
+
+    .example {
+      padding: 40px 20px;
+    }
+
+    .example h2 {
+      font-size: 1.5em;
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+
+    .example .example-text {
+      border-radius: 10px;
+      padding: 15px;
+      background-color: #66b2ff;
+      color: #fff;
+      max-width: 800px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer {
+      background-color: #006fe6;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Selamat Datang di Proyek Dasar Sass</h1>
+  </header>
+
+  <section class="about">
+    <h2>Tentang Proyek Ini</h2>
+    <p>
+      Halaman web sederhana ini menunjukkan bagaimana Sass dapat membuat CSS
+      menjadi lebih kuat, mudah dirawat, dan fleksibel untuk disesuaikan.
+      Dengan menggunakan variabel, mixin, dan nesting, kamu dapat mengelola
+      stylesheet yang besar dengan lebih efisien.
+    </p>
+  </section>
+
+  <section class="features">
+    <h2>Fitur Utama Sass</h2>
+    <ul class="feature-list">
+      <li>Variabel untuk menyimpan nilai yang dapat digunakan berulang, seperti warna dan ukuran huruf</li>
+      <li>Mixin untuk mengelompokkan deklarasi gaya yang sering digunakan</li>
+      <li>Nesting untuk membuat struktur CSS lebih rapi dan mudah dibaca</li>
+      <li>Fungsi warna seperti <code>lighten()</code> dan <code>darken()</code></li>
+      <li>Struktur modular untuk proyek yang dapat dikembangkan dengan mudah</li>
+    </ul>
+  </section>
+
+  <section class="example">
+    <h2>Contoh Hasil</h2>
+    <div class="example-text">
+      Kotak ini menggunakan mixin Sass untuk menerapkan sudut membulat, padding,
+      dan versi warna utama yang sedikit lebih terang sebagai latar belakangnya.
+      Gaya ini dapat digunakan kembali dengan mudah di bagian lain dari proyekmu.
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Proyek Dasar Sass | Dirancang oleh Azka Genta Buana</p>
+  </footer>
+
+</body>
+</html>
