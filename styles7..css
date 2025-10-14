@@ -1,0 +1,264 @@
+/* -----------------------------------
+   Gaya Umum Halaman
+----------------------------------- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* -----------------------------------
+   Bagian Navbar
+----------------------------------- */
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #0d6efd !important;
+}
+
+.navbar-brand:hover {
+    color: #0b5ed7 !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #555 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important;
+}
+
+/* -----------------------------------
+   Bagian Hero (Tampilan Awal)
+----------------------------------- */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80')
+        no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.hero .btn {
+    padding: 12px 28px;
+    font-size: 1rem;
+}
+
+/* -----------------------------------
+   Bagian Layanan (Services)
+----------------------------------- */
+.services {
+    padding: 80px 0;
+}
+
+.services h2 {
+    font-weight: 600;
+    color: #0d6efd;
+    margin-bottom: 50px;
+}
+
+.services .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.services .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.services .card-title {
+    color: #0d6efd;
+    font-weight: 600;
+}
+
+/* -----------------------------------
+   Bagian Kontak
+----------------------------------- */
+.contact {
+    background-color: #e9ecef;
+    padding: 80px 0;
+}
+
+.contact h2 {
+    color: #0d6efd;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.contact .form-control {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+}
+
+.contact .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.3);
+}
+
+/* -----------------------------------
+   Footer
+----------------------------------- */
+footer {
+    background-color: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 0.95rem;
+}
+/* ===================================
+   Gaya Umum Halaman
+=================================== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===================================
+   Navigasi (Menu Atas)
+=================================== */
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #0d6efd !important;
+}
+
+.navbar-brand:hover {
+    color: #0b5ed7 !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #555 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important;
+}
+
+/* ===================================
+   Bagian Hero (Tampilan Awal)
+=================================== */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80')
+        no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.hero .btn {
+    padding: 12px 28px;
+    font-size: 1rem;
+}
+
+/* ===================================
+   Bagian Layanan
+=================================== */
+.layanan {
+    padding: 80px 0;
+}
+
+.layanan h2 {
+    font-weight: 600;
+    color: #0d6efd;
+    margin-bottom: 50px;
+}
+
+.layanan .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.layanan .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.layanan .card-title {
+    color: #0d6efd;
+    font-weight: 600;
+}
+
+/* ===================================
+   Bagian Kontak
+=================================== */
+.kontak {
+    background-color: #e9ecef;
+    padding: 80px 0;
+}
+
+.kontak h2 {
+    color: #0d6efd;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.kontak .form-control {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+}
+
+.kontak .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.3);
+}
+
+/* ===================================
+   Bagian Footer
+=================================== */
+footer {
+    background-color: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 0.95rem;
+}
