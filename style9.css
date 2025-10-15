@@ -1,0 +1,183 @@
+/*
+====================================
+4. Readable Text & Global Setup
+====================================
+*/
+body {
+    /* Font size 16px dan warna #333 untuk body text */
+    font-size: 16px;
+    color: #333;
+    /* High contrast background color */
+    background-color: #f4f4f4; 
+    font-family: Arial, sans-serif;
+    line-height: 1.6; /* Tambahkan line-height untuk keterbacaan */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0056b3; /* Warna gelap untuk kontras dengan teks */
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*
+====================================
+1. Clear Navigation
+====================================
+*/
+nav ul {
+    list-style: none; /* Hapus default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    /* Spacing between items */
+    margin-left: 20px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+/* Visual feedback on hover */
+nav a:hover,
+nav a:focus { /* ':focus' juga penting untuk aksesibilitas keyboard! */
+    background-color: #004085;
+    outline: 2px solid yellow; /* Outline yang jelas saat fokus */
+    outline-offset: 2px;
+}
+
+/* Tombol menu, sederhana tanpa JS fungsionalitas */
+.menu-button {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.menu-button:focus {
+    outline: 2px solid yellow;
+    outline-offset: 2px;
+}
+
+/*
+====================================
+2. Identifiable Links
+====================================
+*/
+a {
+    /* Distinct color dan underline */
+    color: #007bff; /* Warna biru yang cerah */
+    text-decoration: underline; 
+    transition: color 0.3s, background-color 0.3s;
+}
+
+a:hover {
+    /* Visual feedback on hover */
+    color: #0056b3; /* Sedikit lebih gelap */
+    background-color: #e6f7ff; /* Latar belakang tipis saat di-hover */
+}
+
+a:focus {
+    /* Visual feedback on focus */
+    color: #0056b3;
+    background-color: #ffcc00; /* Latar belakang kuning yang sangat terlihat */
+    outline: 3px solid #ffcc00; /* Outline untuk fokus */
+    outline-offset: 2px;
+}
+
+/* Tautan di sidebar dan footer */
+.sidebar a, footer a {
+    font-weight: bold;
+}
+
+/*
+====================================
+3. Simple and Predictable Layouts
+====================================
+*/
+.layout-container {
+    /* Use flexbox to structure the layout */
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    gap: 30px; /* Jarak antara main dan sidebar */
+}
+
+.main-content {
+    flex: 3; /* Ambil 3 bagian dari total 4 */
+    padding: 20px;
+    background-color: white; /* Kontras tinggi untuk konten utama */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    flex: 1; /* Ambil 1 bagian dari total 4 */
+    padding: 20px;
+    background-color: #e9ecef; /* Warna latar belakang yang berbeda untuk membedakan */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsif sederhana untuk layout */
+@media (max-width: 768px) {
+    .layout-container {
+        flex-direction: column; /* Ubah ke tata letak kolom pada layar kecil */
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
+
+
+/*
+====================================
+5. Screen Reader Accessibility
+====================================
+*/
+/* Class untuk menyembunyikan konten secara visual tetapi tetap dapat diakses oleh Screen Reader */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+/* Footer style */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #ffd700;
+}
