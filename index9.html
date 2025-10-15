@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situs Web Aksesibel</title>
+    <link rel="stylesheet" href="style9.css"> 
+</head>
+<body>
+    
+    <header>
+        <div id="menu-label" class="screen-reader-text">Tombol untuk membuka atau menutup menu navigasi utama.</div>
+        <button class="menu-button" aria-expanded="false" aria-labelledby="menu-label">
+            <span aria-hidden="true">☰</span>
+            <span class="screen-reader-text">Menu</span>
+        </button>
+        
+        <nav aria-label="Navigasi Utama">
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#layanan">Layanan</a></li>
+                <li><a href="#tentang">Tentang Kami</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="layout-container">
+        <div class="main-content">
+            <h1>Selamat Datang di Situs Kami yang Aksesibel!</h1>
+            
+            <section id="tentang">
+                <h2>Tentang Aksesibilitas Web</h2>
+                <p>Aksesibilitas web berarti bahwa orang dengan disabilitas dapat menggunakan web. Lebih spesifik, web harus dapat dipahami, dioperasikan, dan berfungsi dengan baik untuk semua orang, terlepas dari kemampuan mereka.</p>
+                <p>Menggunakan CSS secara bijak membantu kita mencapai tujuan ini, mulai dari memastikan <a href="#">kontras warna</a> yang baik hingga desain <a href="#">tata letak</a> yang mudah diprediksi. Ini bukan hanya tentang memenuhi standar, tetapi tentang memastikan setiap orang memiliki akses yang sama terhadap informasi dan layanan.</p>
+                <p>Ingat, **identifiable links** (tautan yang mudah dikenali) dan **clear navigation** (navigasi yang jelas) adalah kunci utama.</p>
+            </section>
+        </div>
+
+        <aside class="sidebar">
+            <h3>Tautan Cepat</h3>
+            <ul>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#panduan">Panduan Pengguna</a></li>
+                <li><a href="#dukungan">Dukungan Teknis</a></li>
+            </ul>
+            
+            <p>Lihat <a href="https://example.com/wcaqg" target="_blank" rel="noopener noreferrer">Panduan WCAG</a> terbaru.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Situs Aksesibel. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
